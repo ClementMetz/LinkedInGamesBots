@@ -196,7 +196,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                     const cellIndex = i * processedMatrix.length + j;
                     
                     // Rechercher l'élément correspondant à la case (i, j)
-                    const element = document.querySelector(`.queens-cell[data-cell-idx="${cellIndex}"]`);
+                    const element = document.querySelector(`.queens-cell-with-border[data-cell-idx="${cellIndex}"]`);
                     if (element) {
                         emulateDoubleClick(element);
                         console.log(`Successfully clicked on ${cellIndex}`);
